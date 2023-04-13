@@ -1,0 +1,144 @@
+/* N1  */
+:root {
+  background: rgb(252, 252, 252);
+}
+/* N2  */
+* {
+  color: black;
+}
+/* N3  */
+h1 {
+  color: blue;
+}
+/* N4  */
+.green {
+  color: green;
+}
+/* N5  */
+#blue {
+  color: blue;
+}
+/* N6  */
+section .box div {
+  color: green;
+}
+section .box p {
+  color: red;
+}
+/* N7  */
+.green {
+  background: green;
+  color: #fff;
+}
+/* N8  */
+/* ul > li {
+  background: red;
+} */
+/* N9  */
+.header-button + span {
+  background: red;
+}
+/* N10  */
+.susid ~ p {
+  background: blue;
+  color: #fff;
+}
+/* N11  */
+.salo,
+#bread {
+  background: yellow;
+}
+/*  Урок 2  */
+/* N1  */
+.first-task :first-child {
+  color: #fff;
+}
+/* N2  */
+.second-task ul:first-child li:first-child {
+  color: yellow;
+}
+
+/* N3  */
+.third-task ul:last-child li:first-child {
+  background: yellow;
+}
+/* N4  */
+.four-task :last-child {
+  background: yellow;
+}
+/* N5  */
+.five-task ul:last-child li:last-child {
+  color: white;
+}
+/* N6  */
+.only-child-task div:only-child {
+  color: red;
+}
+/* N7  */
+.seven-task p:first-of-type {
+  background: red;
+}
+/* N8  */
+.eight-task p:last-of-type {
+  background: red;
+}
+/* N9  */
+.nine-task p:only-of-type {
+  background: yellow;
+}
+/*  Урок 3  */
+/* N1  */
+.lesson-three-task-one [href] {
+  color: white;
+  background: grey;
+}
+/* N2  */
+.lesson-three-task-two [value] {
+  color: yellow;
+}
+/* N3  */
+.lesson-three-task-three [value='3'] {
+  color: red;
+}
+/* N4  */
+.lesson-three-task-four
+  button:first-child[class~='primary'] {
+  background: blue;
+}
+/* N5  */
+.lesson-three-task-five [class|='secondary'] {
+  background: red;
+}
+/* N6  */
+.lesson-three-task-six [class^='b'] {
+  color: green;
+  background: white;
+}
+/* N7  */
+.lesson-three-task-seven [class*='on'] {
+  color: green;
+  background: white;
+}
+/* N8  */
+.lesson-three-task-eight [class$='s'] {
+  background: rgb(243, 70, 70);
+}
+/* N9  */
+.lesson-three-task-nine > h2::first-letter,
+.lesson-three-task-nine > h3::first-letter {
+  color: red;
+}
+/* N10  */
+.lesson-three-task-ten::first-line {
+  background: yellow;
+}
+/* N11 .lesson-three-task-eleven*/
+::placeholder {
+  background: red;
+}
+/* N12 , N13  */
+.lesson-three-task-twelve li::before,
+.lesson-three-task-thirteen li::after {
+  content: '➤';
+  color: rgb(239, 89, 89);
+}
