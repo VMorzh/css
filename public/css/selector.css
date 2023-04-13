@@ -1,0 +1,125 @@
+:root {
+  background: rgb(199, 185, 199);
+}
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+* {
+  color: red;
+}
+h1 {
+  color: green;
+}
+.box {
+  background: rgb(250, 248, 248);
+}
+
+h1,
+#user,
+button.button {
+  color: rgb(37, 240, 6);
+}
+#user {
+  color: blue;
+}
+#box > p {
+  color: paleturquoise;
+}
+footer > .user {
+  color: red;
+}
+footer em.child,
+footer div.child {
+  color: rgb(188, 2, 250);
+}
+h1 + p {
+  background: black;
+}
+h1 ~ p {
+  background: rgb(34, 171, 235);
+}
+/* h1 ~ div > p  */
+
+.card-dark {
+  background: rgb(189, 240, 189);
+}
+.item:first-child {
+  color: green;
+}
+.item:last-child {
+  color: rgb(41, 0, 128);
+}
+.item:only-child {
+  color: red;
+}
+.item:first-of-type {
+  color: green;
+}
+.item:nth-child(odd) {
+  color: rgb(241, 14, 154);
+}
+p:not(.item) {
+  color: black;
+}
+.item:not(p) {
+  color: greenyellow;
+}
+p:empty {
+  height: 10px;
+  background: blueviolet;
+}
+
+.input-dark {
+  background: #797777;
+}
+/* .input-dark[required] {
+  background: red;
+} */
+.input-dark[type='number'] {
+  background: #16c100;
+}
+.small-img[alt~='small'] {
+  height: 250px;
+}
+a[rel~='external'] {
+  color: #16c100;
+}
+button[class|='btn'] {
+  background: rgb(186, 183, 183);
+}
+/* a[class^='btn'] {
+  background: rgb(218, 4, 4);
+}  */
+button[class*='btn'] {
+  background: rgb(184, 6, 6);
+}
+button[class$='big'] {
+  background: rgb(195, 195, 206);
+}
+.btn::first-letter {
+  color: red;
+}
+.big-text::first-line {
+  color: red;
+}
+.input-dark::placeholder {
+  color: green;
+  background: rgb(128, 128, 241);
+}
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: blue;
+  background: #c1b700;
+}
+.before-after::before,
+.before-after::after {
+  content: '$$$';
+  color: red;
+  background: #c1b700;
+}
