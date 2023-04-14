@@ -50,7 +50,7 @@ section .box p {
 }
 /*  Урок 2  */
 /* N1  */
-.first-task :first-child {
+.first-task li:first-child {
   color: #fff;
 }
 /* N2  */
