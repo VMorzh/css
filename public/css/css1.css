@@ -12,7 +12,7 @@ h1 {
 }
 /* N4  */
 .green {
-  color: green;
+  color: yellowgreen;
 }
 /* N5  */
 #blue {
@@ -20,23 +20,24 @@ h1 {
 }
 /* N6  */
 section .box div {
-  color: green;
+  background-color: green;
 }
 section .box p {
-  color: red;
+  background-color: red;
 }
 /* N7  */
-.green {
+.gre {
   background: green;
   color: #fff;
 }
+
 /* N8  */
-/* ul > li {
-  background: red;
-} */
+ul > li {
+  color: red;
+}
 /* N9  */
 .header-button + span {
-  background: red;
+  background-color: red;
 }
 /* N10  */
 .susid ~ p {
@@ -51,7 +52,7 @@ section .box p {
 /*  Урок 2  */
 /* N1  */
 .first-task li:first-child {
-  color: #fff;
+  color: #dbdbdbdd;
 }
 /* N2  */
 .second-task ul:first-child li:first-child {
@@ -60,15 +61,15 @@ section .box p {
 
 /* N3  */
 .third-task ul:last-child li:first-child {
-  background: yellow;
+  color: yellow;
 }
 /* N4  */
-.four-task :last-child {
+.four-task li:last-child {
   background: yellow;
 }
 /* N5  */
 .five-task ul:last-child li:last-child {
-  color: white;
+  color: #dbdbdbdd;
 }
 /* N6  */
 .only-child-task div:only-child {
@@ -90,7 +91,7 @@ section .box p {
 /* N1  */
 .lesson-three-task-one [href] {
   color: white;
-  background: grey;
+  background: #dbdbdbdd;
 }
 /* N2  */
 .lesson-three-task-two [value] {
@@ -112,12 +113,12 @@ section .box p {
 /* N6  */
 .lesson-three-task-six [class^='b'] {
   color: green;
-  background: white;
+  background: #dbdbdbdd;
 }
 /* N7  */
 .lesson-three-task-seven [class*='on'] {
   color: green;
-  background: white;
+  background: #dbdbdbdd;
 }
 /* N8  */
 .lesson-three-task-eight [class$='s'] {
