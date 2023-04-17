@@ -123,3 +123,78 @@ button[class$='big'] {
   color: red;
   background: #c1b700;
 }
+#test:target {
+  color: red;
+}
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: green;
+}
+/* .card:hover {
+  background: green;
+} */
+.link:active {
+  color: purple;
+}
+.card:active {
+  background-color: purple;
+}
+input {
+  background-color: grey;
+}
+input:focus {
+  background-color: red;
+}
+.card:focus-within {
+  background: rgb(131, 94, 94);
+}
+.card:lang(en) {
+  background: gainsboro;
+}
+.card:lang(en) > span::after {
+  content: '(en)';
+}
+button {
+  background-color: rgb(220, 239, 233);
+}
+button:enabled {
+  background-color: greenyellow;
+}
+button:disabled {
+  background-color: aqua;
+}
+.inp:read-write {
+  background-color: blue;
+}
+.inp:read-only {
+  background-color: red;
+}
+input[type='checkbox']:checked ~ span {
+  background-color: red;
+}
+.valid:valid {
+  background: goldenrod;
+}
+.valid:invalid {
+  background: rgba(180, 85, 214, 0.562);
+}
+.valid:optional {
+  background: yellow;
+}
+.number:focus {
+  background: gray;
+}
+.number:out-of-range {
+  background: red;
+}
+.number:in-range {
+  background: green;
+}
+/* number:invalid {
+  background: rgba(235, 243, 89, 0.92);
+} */
+input:placeholder-shown ~ span {
+  background: rgba(243, 89, 217, 0.92);
+}

@@ -1,75 +1,76 @@
-#test:target {
-  color: red;
-}
-.link:link {
-  color: red;
-}
-.link:hover {
+/* .card {
+  border: none;
+} */
+.card > p {
   color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
-/* .card:hover {
-  background: green;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: yellow;
+  -webkit-text-stroke: 1px rgba(255, 0, 208, 0.952);
+
+  direction: rtl;
+}
+/* #test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+   writing-mode: vertical-lr;
+
 } */
-.link:active {
-  color: purple;
+/*або значення за замовчуванням: initial;*/
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  text-align: justify;
+
+  letter-spacing: 4px;
 }
-.card:active {
-  background-color: purple;
+span {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline dotted red;
+
+  font-size: larger;
+  font-weight: 600;
 }
-input {
-  background-color: grey;
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-color: blueviolet;
+  text-decoration-style: wavy;
 }
-input:focus {
-  background-color: red;
+
+.pre {
+  tab-size: 8px;
 }
-.card:focus-within {
-  background: rgb(131, 94, 94);
+p {
+  font-style: oblique;
+  font-stretch: semi-expanded;
 }
-.card:lang(en) {
-  background: gainsboro;
+* {
+  font-family: 'Roboto', 'Montserrat', Arial, Helvetica,
+    sans-serif;
+  font-size: 16px;
+
+  font-display: swap;
 }
-.card:lang(en) > span::after {
-  content: '(en)';
+.block {
+  display: inline-block;
+  background: rgb(200, 194, 194);
+  margin: auto;
+
+  width: 100%;
+  max-width: 600px;
+
+  /* min-height: 100px;
+  max-height: max-content; */
+  padding: 15px;
 }
-button {
-  background-color: rgb(220, 239, 233);
-}
-button:enabled {
-  background-color: greenyellow;
-}
-button:disabled {
-  background-color: aqua;
-}
-.inp:read-write {
-  background-color: blue;
-}
-.inp:read-only {
-  background-color: red;
-}
-input[type='checkbox']:checked ~ span {
-  background-color: red;
-}
-.valid:valid {
-  background: goldenrod;
-}
-.valid:invalid {
-  background: rgba(180, 85, 214, 0.562);
-}
-.valid:optional {
-  background: yellow;
-}
-.number:focus {
-  background: gray;
-}
-.number:out-of-range {
-  background: red;
-}
-.number:in-range {
-  background: green;
-}
-/* number:invalid {
-  background: rgba(235, 243, 89, 0.92);
-} */
-input:placeholder-shown ~ span {
-  background: rgba(243, 89, 217, 0.92);
-}
+/* box-sizing: content-box; */
