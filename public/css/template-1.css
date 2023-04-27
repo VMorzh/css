@@ -128,3 +128,38 @@
   display: block;
   width: 100%;
 }
+.card:hover {
+  outline: 2px solid blue;
+  /* outline offset: 5px; */
+}
+.plans_card:nth-child(2) > .card {
+  display: none;
+}
+h1 {
+  text-shadow: 1px 1px 10px rgba(252, 78, 78, 0.5);
+}
+p {
+  /* overflow-x: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: pre-line; */
+  max-width: 200px;
+  width: 180px;
+  word-break: break-word;
+  /* hyphens: manual; робиться ч-з JS  */
+  overflow: auto;
+  resize: both;
+  word-spacing: 4px;
+}
+.overflow {
+  overflow-wrap: break-word;
+}
+
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
