@@ -16,37 +16,26 @@
         <div class="page_block">
             {{> hero title=hero.title text=hero.text}}
         </div>
+        {{> card}}
+
         <div class="page_block">
-            <main class="row g-0 plans">
-                {{#each plans}}
-                <div class="col plans_card">
-                    <div class="card">
-                        <div class="card-header">
-                            {{name}}
-                        </div>
-                        <div class="card-body">
-                            <div>
-                                <div class="card_block">
-                                    <span class="card_price_amount">${{price}}</span>
-                                    <span class="card_price_duration">/ mo</span>
-                                </div>
-                                <div class="card_block">
-                                    {{#each features}}
-                                    <span class="card_description_item">{{this}}</span>
-                                    {{/each}}
-                                </div>
-                                <div class="card_block">
-                                    <button
-                                        class="btn {{#if @first}}btn-outline-primary{{else}}btn-primary{{/if}} card_button">{{button}}</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{/each}}
-            </main>
+            <div class="calc">
+                <table class="table">
+                    <caption>My table</caption>
+                    <tbody>
+                        {{#each footer}}
+                        <tr>
+                            {{#each links}}
+                            <td>{{text}}</td>
+                            {{/each}}
+                            <td></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
         </div>
-        {{> divider}}
+
         <div class="page_block">
             <footer class="footer row">
                 <div class="col-3">
