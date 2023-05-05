@@ -638,7 +638,7 @@ router.get('/template-4', function (req, res) {
 
     main: {
       heading: 'Oh yeah, it’s that good. See for yourself.',
-      descriotion:
+      descr:
         'Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.',
       image: 'https://picsum.photos/500/500',
       button: 'View details',
