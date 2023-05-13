@@ -46,17 +46,16 @@
     <div class="updates">
         <h3 class="updates_title">{{title}}</h3>
         {{#each list}}
-        <div class="nick_descr">
+        <div class="user_descr">
 
-            <div class="" style="background-image"></div>
+            <img src="https://picsum.photos/32" alt="User Image" class="user_image">
             <strong>{{nickname}}</strong>
             <p>{{description}}</p>
 
+            {{/each}}
+            <a href="{{show_all.url}}" class="show_all">{{show_all.text}}</a>
         </div>
-        {{/each}}
-        <a href="{{show_all.url}}" class="show_all">{{show_all.text}}</a>
-    </div>
-    {{/with}}
+        {{/with}}
 </section>
 
 <div class="expirience">
