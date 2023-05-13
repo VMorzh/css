@@ -111,8 +111,8 @@
   gap: var(--space-xxl);
 }
 .messages {
-  max-width: 620px;
-  width: var(--width-d);
+  /* max-width: 620px;
+  width: var(--width-d); */
   background: var(--color-white);
   border-radius: var(--border-radius-d);
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
@@ -166,8 +166,8 @@
 }
 /*===!===*/
 .form {
-  max-width: 340px;
-  width: var(--width-d);
+  /* max-width: 340px;
+  width: var(--width-d); */
   background: var(--color-white);
   border-radius: var(--border-radius-d);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -242,10 +242,11 @@
 }
 /*===super_checkbox\ ===*/
 .advantages {
-  display: flex;
-  gap: var(--space-x);
+  /* display: flex; */
+  gap: var(--space-m);
 }
-.advantages > div {
+.advantages > div,
+.advantage {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-border);
@@ -253,12 +254,14 @@
   padding: var(--space-x);
   gap: var(--space-s);
 }
-.advantages > div > strong {
+.advantages > div > strong,
+.advantage > strong {
   font-weight: var(--weight-7);
   font-size: 18px;
   color: var(--color-title);
 }
-.advantages > div > p {
+.advantages > div > p,
+.advantage > p {
   font-size: var(--size-m);
   color: var(--color-input);
   line-height: var(--height-L);
@@ -267,3 +270,63 @@
   flex-grow: 1;
   width: var(--width-d);
 }
+.advantages {
+  display: grid;
+
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-rows: 1fr;
+
+  /* grid-template-columns: minmax(300px, 1fr) 150px 1fr; */
+  /* grid-template-columns: minmax(fit-content, 150px) 150px 1fr; */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  );
+  /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); */
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 'messages messages form' 'advantages advantages advantages';
+  /* grid-auto-rows: 2fr; */
+}
+.messages {
+  grid-area: messages;
+}
+.form {
+  grid-area: form;
+}
+/* .advantages {
+  grid-area: advantages;
+} */
+.advantage {
+  height: var(--width-d);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-auto-columns: 3fr; */
+  grid-auto-flow: row dense;
+}
+/* .footer > div:last-of-type { */
+/* grid-column: 1 /3;
+  grid-row: 1 /3; */
+/* grid-column: 4 / 6; 
+}*/
+/* .footer > div:last-of-type {
+  order: -1;
+} */
+
+/* .advantages {
+  display: grid;
+  height: 800;
+  grid-template-columns: repeat(1, 1fr);
+  place-content: flex-end flex-end;
+  justify-items: flex-end;
+} */
