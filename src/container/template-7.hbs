@@ -1,21 +1,3 @@
-<header>
-    <div class="header_nav">
-        {{#with header}}
-        {{> logo7}}
-        <nav class="nav">
-            {{> nav list=links}}
-        </nav>
-    </div>
-    <div class="header_ad">
-        <div>
-            <a href="{{ad.url}}" class="header_link">Ad</a>
-            <strong class="header_text">{{ad.text}}: www.example.com</strong>
-        </div>
-        <span class="users_online">Users online: {{userOnline}}</span>
-    </div>
-    {{/with}}
-</header>
-
 <main class="main">
     <div class="hero">
         {{> hero7 }}
@@ -28,25 +10,16 @@
         {{/with}}
     </div>
 
-    <div class="our_articles">
-        <em>Our Articles</em>
-        <button href="#">View All</button>
-    </div>
+    <div class="articles">
+        <div class="our_articles">
+            <em>Our Articles</em>
+            <button href="#">View All</button>
+        </div>
 
-    <div class="articles_card">
-        {{#each articles}}
-        {{> cardArtdark data=this}}
-        {{/each}}
+        <div class="articles_card">
+            {{#each articles}}
+            {{> cardArtdark data=this}}
+            {{/each}}
+        </div>
     </div>
 </main>
-
-<footer class="footer_dark">
-    {{#with footer}}
-    <div class="nav">
-        {{> navFooter list=pages}}
-    </div>
-    <div>
-        <span class="footer_copyright">{{copyright}}</span>
-    </div>
-    {{/with}}
-</footer>

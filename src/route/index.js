@@ -1104,7 +1104,7 @@ router.get('/template-7', function (req, res) {
 
     header: {
       brandName: 'Logo',
-      userOnline: 10,
+      userOnline: 21,
 
       ad: {
         text: 'Best service to Boost your priority faster',
@@ -1138,7 +1138,7 @@ router.get('/template-7', function (req, res) {
     hero: {
       title: 'The most professional service',
       description:
-        'I am incredibly grateful for the outstanding work done by this team. Their promptness and attention to detail',
+        'I am incredibly grateful for the outstanding work done by this team. Their promptness and attention to detailthe guys did a great job and the prices are the best in the market.',
       button: {
         url: 'www.example.com/buy',
         text: 'Go to shop',
@@ -1164,7 +1164,7 @@ router.get('/template-7', function (req, res) {
         photo: 'https://picsum.photos/400/200',
         name: 'Dolor Sit Amet',
         description:
-          'Etiam luctus ante eget ante convallis iaculis. Nunc viverra quam vel libero accumsan, non malesuada neque vestibulum. Curabitur malesuada, velit ut pretium ullamcorper, lacus elit vehicula sapien, ut sollicitudin quam metus eget sapien.',
+          'Etiam luctus ante eget ante convallis iaculis. Nunc viverra quam vel libero accumsan, non malesuada neque vestibulum. Curabitur malesuada, velit ut pretium ullamcorper, lacus elit vehicula sapien, ut sollicitudin quam metus eget sapien.hvaifbaifbfoabo hvaifbaifbfoabo hvaifbaifbfoabo hvaifbaifbfoabo hvaifbaifbfoabo hvaifbaifbfoabo;',
       },
       {
         id: 3,

@@ -1,8 +1,11 @@
 {{#with data}}
 <div>
-    <img src={{photo}} alt="Art Image" class="art_image">
-    <h2 class="art_title">{{name}}</h2>
-    <p class="art_text">{{description}}</p>
-    <button href="#" class="art_button">Read All</button>
+    <img src={{photo}} alt="Art Image" class="art_image" id="{{id}}" {{#if isNew}}class="exp_badge" {{else}} {{/if}}>
+    <div class="card_badge">NEW</div>
+    <div class="art_item">
+        <h2 class="art_title">{{name}}</h2>
+        <p class="art_text">{{description}}</p>
+        <button href="{{url}}" class="art_button">Read All</button>
+    </div>
 </div>
 {{/with}}
