@@ -1,3 +1,5 @@
+@layer normalize, main, component, style;
+
 :root {
   scroll-behavior: smooth;
 
@@ -41,8 +43,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-xxl);
-
-  /* padding-top: 74px; */
+  padding-top: 74px;
 }
 /*============================*/
 .header {
@@ -257,29 +258,107 @@
 .hero {
   user-select: none;
 }
-.modal {
+/* .modal {
   position: fixed;
   top: 24px;
-  /* right: 24px; */
+  right: 24px;
   left: calc(50% - 300px);
   width: 500px;
-  /* height: 100px; приберемо для фото*/
+  height: 100px; приберемо для фото
   background: var(--color-blue);
   color: var(--color-white);
   padding: 24px;
   border-radius: var(--border-radius);
   line-height: 150%;
-  z-index: 2;
+  z-index: 2; */
 
-  /* position-property: top;
+/* position-property: top;
   transition-duration: 3s; */
-}
+
 /* body:hover .modal {
   top: 500px;
 } */
-.modal_image {
+/* .modal_image {
   width: 100px;
   height: 100px;
   float: left;
   margin-right: 12px;
+} */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media all and (max-width: 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media all and (min-width: 0px) and (max-width: 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  } 
+} */
+@media all and (width <= 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (600px < width <= 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media all and (not(min-width: 800px)) {
+  .page_content {
+    background: #0d6efd;
+  }
+} */
+
+/* @media all and (min-height: 600px) {
+  .page_content {
+    background: #0d6efd;
+  }
+} */
+.form {
+  gap: var(--space-l);
+}
+@media all and (width <= 560px) {
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.form_info {
+  max-width: 300px;
+  width: 100%;
+  line-height: 150%;
+}
+.form_content {
+  align-items: center;
+  text-align: center;
+}
+
+/* .hero_container {
+  container-type: inline-size;
+  container-name: hero;
+}
+
+@container hero (width < 960px) {
+  .hero {
+    flex-direction: column;
+  }
+} */
+@layer style {
+  .card_button {
+    background: red;
+  }
+}
+@layer main {
+  .card_button {
+    background: yellow;
+  }
 }

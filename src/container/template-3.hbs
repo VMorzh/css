@@ -13,7 +13,7 @@
 
 {{#with hero}}
 <div class="hero">
-    <div class="hero_content">
+    <div class="hero_container">
         <h1 class="hero_title">{{title}}</h1>
         <p class="hero_text">{{text}}</p>
     </div>
@@ -25,10 +25,10 @@
 </div>
 {{/with}}
 
-<div class="modal">
-    {{!-- <img src="{{hero.photo}}" alt="hero image" class="modal_image"> --}}
+{{!-- <div class="modal">
+    <img src="{{hero.photo}}" alt="hero image" class="modal_image">
     {{hero.title}}{{hero.text}}
-</div>
+</div> --}}
 
 <main class="blog">
     {{#each blog}}
@@ -40,6 +40,7 @@
     {{> cardBlog data=this}}
     {{/each}}
 </main>
+
 
 {{#with form}}
 <div class="form">
