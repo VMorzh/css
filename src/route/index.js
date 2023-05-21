@@ -2,7 +2,20 @@
 const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
 const router = express.Router()
+// ================================================================
 
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashbord', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashbord', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
@@ -12,7 +25,9 @@ router.get('/slack', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('slack', {
+    layout: null,
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 
