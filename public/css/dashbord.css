@@ -133,6 +133,11 @@ body {
   .relative {
     position: relative;
   }
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: #ced4da;
+  }
 }
 
 @layer element {
@@ -146,21 +151,18 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
   .nav-button__icon {
-    height: 16px;
-    width: 16px;
+    height: var(--spacing-3);
+    width: var(--spacing-3);
   }
   .header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .header__icons {
+  /* .header__icons {
     display: flex;
     gap: 14px;
-
-    /* position: absolute; */
-    /* top: calc(50% - (20px / 2)); */
-  }
+  } */
   .header__search {
     max-width: 30%;
     min-width: 180px;
@@ -215,6 +217,40 @@ body {
     align-items: flex-start;
     gap: var(--spacing-2);
   }
+  .header__button {
+    height: var(--spacing-7);
+    width: var(--spacing-7);
+  }
+  .property__block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-5);
+  }
+  .property__content {
+    border-radius: calc(var(--radius-2) * 2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-5);
+  }
+  .purchase__title {
+    font-size: var(--size-4);
+    font-weight: 600;
+  }
+  .purchase__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-8) 0;
+  }
+  .payment__content {
+    width: 450px;
+  }
+  .payment__form {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+  }
 }
 
 @layer mod {
@@ -226,12 +262,17 @@ body {
   .text--dark {
     color: #000000b2;
   }
-
   .text--light {
     color: var(--color-white);
   }
   .text--black {
     color: var(--color-black);
+  }
+  .text--warning {
+    color: var(--color-warning);
+  }
+  .text--success {
+    color: var(--color-success);
   }
   .text--heading {
     font-size: var(--size-4);
@@ -249,6 +290,12 @@ body {
   }
   .text--bold {
     font-weight: 500;
+  }
+  .line--big {
+    padding-bottom: var(--spacing-4);
+  }
+  .line--medium {
+    padding-bottom: var(--spacing-2);
   }
   .vertical--middle {
     gap: var(--spacing-2);
@@ -280,6 +327,9 @@ body {
   }
   .icon--color-yellow {
     background-color: var(--color-yellow-light);
+  }
+  .icon--color-aqua {
+    background-color: #e1f3fc;
   }
   .field--select {
     display: flex;
