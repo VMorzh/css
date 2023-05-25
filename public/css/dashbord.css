@@ -138,6 +138,14 @@ body {
     width: 100%;
     background-color: #ced4da;
   }
+  .pay-button {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2);
+    text-decoration: none;
+    border-radius: var(--radius-1);
+    padding: var(--spacing-1);
+  }
 }
 
 @layer element {
@@ -176,7 +184,6 @@ body {
     top: calc(50% - (20px / 2));
     left: var(--spacing-2);
   }
-
   .field__select {
     position: absolute;
     width: var(--w-h-100);
@@ -185,6 +192,9 @@ body {
     left: 0;
     opacity: 0;
     cursor: pointer;
+  }
+  .field__block {
+    padding: var(--spacing-2);
   }
   .analytic__block {
     display: grid;
@@ -221,7 +231,7 @@ body {
   .property__block {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: var(--spacing-5);
   }
   .property__content {
@@ -229,6 +239,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-5);
+    height: 55%;
   }
   .purchase__title {
     font-size: var(--size-4);
@@ -242,23 +253,33 @@ body {
   }
   .payment__content {
     width: 450px;
+    border-radius: calc(var(--radius-2) * 2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-5);
   }
   .payment__form {
     display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    padding: var(--spacing-2);
+  }
+  .field__block {
+    display: grid;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2);
   }
   .form__checkbox {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    gap: var(--spacing-2);
+    /* align-content: flex-start; */
+    gap: var(--spacing-3);
+    padding: var(--spacing-5);
   }
   .choose__form {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: var(--spacing-5);
+    gap: 80px;
+    padding: var(--spacing-5);
   }
 }
 
@@ -343,7 +364,6 @@ body {
   .field--select {
     display: flex;
     align-items: center;
-
     /*reative для розміщення галочки !>select*/
   }
   .icon--header-settings {
@@ -366,9 +386,14 @@ body {
     background-color: var(--color-white);
     border: 1px solid #e0e4e8;
   }
+  .pay-button--active {
+    background: var(--color-primary);
+    padding: var(--spacing-2);
+    margin-top: var(--spacing-2);
+  }
 }
 
-/* @layer adaptive {
+@layer adaptive {
   @media all and (1260px <= width) {
     .page_content {
       max-width: var(--page-widht-big);
@@ -388,9 +413,8 @@ body {
     .page_content {
       max-width: var(--page-widht-small);
     }
-   
   }
-  @media all and (width < 690px) {
+  /* @media all and (width < 690px) {
     .features_grid_4 {
       grid-template-columns: 2fr 2fr;
     }
@@ -403,5 +427,5 @@ body {
       grid-template-columns: 1fr;
       gap: var(--spacing-2);
     }
-  }
-} */
+  } */
+}
