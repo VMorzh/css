@@ -394,27 +394,28 @@ body {
 }
 
 @layer adaptive {
-  @media all and (1260px <= width) {
-    .page_content {
-      max-width: var(--page-widht-big);
+  @media all and (width <= 1560px) {
+    .page--dashboard {
+      grid-template-columns: 1fr;
+    }
+    .header {
+      display: none;
     }
   }
-  @media all and (1000px <= width < 1260px) {
-    .page_content {
-      max-width: var(--page-widht-medium);
-    }
-    .hero_image {
-      left: 500px;
-      height: 300px;
+  @media all and (width <= 1050px) {
+    .aside {
+      display: none;
     }
   }
 
   @media all and (width < 1000px) {
-    .page_content {
+    .analytic_content {
       max-width: var(--page-widht-small);
     }
   }
-  /* @media all and (width < 690px) {
+}
+
+/* @media all and (width < 690px) {
     .features_grid_4 {
       grid-template-columns: 2fr 2fr;
     }
@@ -428,4 +429,3 @@ body {
       gap: var(--spacing-2);
     }
   } */
-}
