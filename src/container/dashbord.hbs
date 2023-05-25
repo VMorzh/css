@@ -23,6 +23,7 @@
 <body>
 
     <div class="page page--dashboard">
+
         <aside class="page__aside aside vertical">
             <div class="aside__logo text">
                 Sidebar
@@ -41,7 +42,7 @@
                     <span class="text text--light">Products</span>
                 </a>
 
-                <div class="relative click">
+                {{!-- <div class="relative click">
                     <div class="field field--select">
                         <span class="text text--light">Choose...</span>
 
@@ -55,7 +56,7 @@
                         <span class="icon header nav-button__icon"
                             style="background-image: url('/svg/select.svg')"></span>
                     </div>
-                </div>
+                </div> --}}
             </nav>
         </aside>
 
@@ -138,6 +139,7 @@
                     </div>
                 </section>
             </div>
+
             <div class="layout">
                 <section class="property__block">
                     <div class="property__content analytic--white">
@@ -188,53 +190,72 @@
                         <div class="purchase__title text--black line--big">Payment</div>
                         <div class="divider"></div>
 
-                        <div class="form_checkbox">
-                            <input type="checkbox" name="" id="">
-                            <div class="super_checkbox"></div>
-                            <label for="">credit card</label>
-                        </div>
-                        <div class="form_checkbox">
-                            <input type="checkbox" name="" id="">
-                            <div class="super_checkbox"></div>
-                            <label for="">debit card</label>
-                        </div>
-                        <div class="form_checkbox">
-                            <input type="checkbox" name="" id="">
-                            <div class="super_checkbox"></div>
-                            <label for="">PayPal</label>
+                        <div class="form__checkbox">
+                            <div class="">
+                                <input type="radio" name="" id="">
+                                <label for="">credit card</label>
+                            </div>
+                            <div class="">
+                                <input type="radio" name="" id="">
+                                <label for="">debit card</label>
+                            </div>
+                            <div class="">
+                                <input type="radio" name="" id="">
+                                <label for="">PayPal</label>
+                            </div>
                         </div>
 
                         <div class="payment__form">
-                            <div class="field__block">field__block</div>
-                            <div class="field__block"> inputs</div>
-                            <div class="field__block">field__block</div>
-                            <div class="field__block"> inputs</div>
+                            <div class="field__block">Name on card</div>
+                            <input type="text" class="field field--header text" placeholder="none">
+                            <div class="field__block">Credit card number</div>
+                            <input type="text" class="field field--header text" placeholder="none">
+                            <div class="field__block">Expiration</div>
+                            <input type="text" class="field field--header text" placeholder="none">
+                            <div class="field__block">CVV</div>
+                            <input type="text" class="field field--header text" placeholder="none">
                         </div>
-
                         <div class="divider"></div>
-                        <div class="relative click">
-                            <div class="field field--select">
-                                <span class="text text--dark">Choose...</span>
 
-                                <select class="field__select relative">
-                                    <option value="dog">Dog</option>
-                                    <option value="cat">Cat</option>
-                                    <option value="frog">Frog</option>
-                                    <option value="parrot">Parrot</option>
-                                    <option value="horse">Horse</option>
-                                </select>
-                                <span class="icon header nav-button__icon"
-                                    style="background-image: url('/svg/select.svg')"></span>
+                        <div class="choose__form">
+                            <div class="relative click">
+                                <label class="text" for="">Country</label>
+                                <div class="field field--select">
+                                    <span class="text text--dark">Choose...</span>
+                                    <select class="field__select relative">
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="frog">Frog</option>
+                                        <option value="parrot">Parrot</option>
+                                        <option value="horse">Horse</option>
+                                    </select>
+                                    <span class="icon header nav-button__icon"
+                                        style="background-image: url('/svg/select.svg')"></span>
+                                </div>
+                            </div>
+                            <div class="relative click">
+                                <label class="text" for="">State</label>
+                                <div class="field field--select">
+                                    <span class="text text--dark">Choose...</span>
+                                    <select class="field__select relative">
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="frog">Frog</option>
+                                        <option value="parrot">Parrot</option>
+                                        <option value="horse">Horse</option>
+                                    </select>
+                                    <span class="icon header nav-button__icon"
+                                        style="background-image: url('/svg/select.svg')"></span>
+                                </div>
                             </div>
                         </div>
-                        <div>Button</div>
+                        <div class="divider"></div>
+                        <button type="submit" class="nav_button nav-button--active">Continue to checkout</button>
                     </div>
                 </section>
             </div>
-
         </main>
     </div>
-
 
 </body>
 
